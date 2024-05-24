@@ -89,7 +89,7 @@ else if (hour < 12){
     else if(usermessage=== "how to delete blog"|| usermessage === "how to delete my post" || usermessage === "how to delete my photo"||usermessage === "how do i delete my photo"||usermessage === "how to delete blog on feaza" || usermessage === "delete mypicture"|| usermessage === "i want to delete my picture" || usermessage === "how do i delete my blog" || usermessage === "how do i delete my picture" || usermessage === "how do i delete my blog" || usermessage === "how to delete my blog" || usermessage === "i want to delete my blog" || usermessage === "help me delete my blog" || usermessage === "help me delete my photo"|| usermessage === "delete photo"|| usermessage === "delete my photo")
     {
         airesponse = `<p> kindly provide your unique-id below and press "Enter" on your keyboard</p>
-        <input type = "text" autofocus id="unique-id" maxlength="500" minlenght="10" required onkeydown="whatkey(event.key)"placeholder="ex 4#Gyemds4m"><button id="delete-blogbutton">delete</button>
+        <input type = "text" autofocus id="unique-id" maxlength="500" minlenght="10" required onkeydown="whatkey(event.key)"placeholder="ex 4#Gyemds4m">
         
         <p id="error">invalid unique code</p> 
         <p class="success-message"></p
@@ -104,7 +104,7 @@ else if (hour < 12){
     else if (usermessage=== "how are you"|| usermessage === "how are you doing" || usermessage === "how you doing"||usermessage === "sup" ||usermessage==="are you good"|| usermessage === "yo fam" ||usermessage === "are you okay" ){
         airesponse = `I'm doing fine on this beautiful ${days[day]} ,how about you`;
     }
-    else if ( usermessage === "I'm good"|| usermessage === "I'm good thanks" || usermessage === "I'm fine"||usermessage === "fine" ||usermessage==="I'm fine thanks"|| usermessage === "fine thanks" ||usermessage === "good thank you"||usermessage === "good thanks" ||usermessage=== "im good ty"|| usermessage === "Im good ty"|| usermessage=== "im good"|| usermessage === "Im good" || usermessage === "im fine")
+    else if ( usermessage === "I'm good"|| usermessage === "I'm good thanks" || usermessage === "I'm fine"||usermessage === "fine" ||usermessage==="I'm fine thanks"|| usermessage === "fine thanks" ||usermessage === "good thank you"||usermessage === "good thanks" ||usermessage=== "im good ty"|| usermessage === "Im good ty"|| usermessage=== "im good"|| usermessage === "im good thanks" || usermessage === "im fine")
     {
         airesponse = `You're welcome, how may i help you today ?`;
     }
