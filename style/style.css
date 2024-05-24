@@ -1,6 +1,6 @@
 body{
     --primary-color: rgb(73, 6, 161);
-    --secondary-color:rgb(105, 4, 148);
+    --secondary-color:rgb(83, 5, 83);
     --default-border:4px;
     --color-white:white;
     --color-black:black;
@@ -10,14 +10,18 @@ body{
     background-color: whitesmoke;
     transition: 0.9s;
     display: block;
-    padding: 20px;
+    padding: 5px 20px 20px 20px;
 }
 nav{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 20px;
-   
+    margin: 0cqmin 10px;
+  background-color:rgb(83, 5, 83);
+  padding:10px 10px;
+  border-radius: 20%;
+  color: white;
+/* border: 1px inset ; */
 }
 
 nav ul li{
@@ -31,20 +35,20 @@ nav ul li a{
     color: inherit;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.5s;
 }
-nav ul li a:hover, nav ul li a:active{
-    color: var(--primary-color);
+nav ul li a:hover, nav ul li a:active{color: gray;
 }
 .open-menu{
     display: none;
    
 }
 .container{
-   margin: 30px;
+   margin: 50px;
    display: grid;
-   grid-template-columns: 1fr 2fr;
+   grid-template-columns: 1fr 1fr;
    align-items: center;
-   gap: 20px;
+   gap: 100px;
 }
 /* .sec-image {
        min-width: 400px;
@@ -73,26 +77,20 @@ nav ul li a:hover, nav ul li a:active{
 }
 
 .section{
-    margin: 50px 30px;
+    margin: 120px 5px 150px 5px;
     
 }
 .header{
   margin:0;
-
-
-  
-
-    
 }
 .header h1{
 font-size: 3rem;
 margin: 0;
 }
 .header p{
-
     font-family: monospace;
-    font-size: 18px;
-    font-style: italic;
+    font-size: 16px;
+line-height: 1.3em;
 }
 .header > button{
     background-color: var(--secondary-color);
@@ -111,7 +109,7 @@ margin: 0;
     align-items: center;
 }
 .switch-mode{
-   background-color: rgb(34, 33, 33);
+   /* background-color: rgb(34, 33, 33); */
    color: white;
    font-size: 2rem;
    padding: 10px 16px;
