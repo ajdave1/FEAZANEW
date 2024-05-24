@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feaza blog</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./style/mobile.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/ai.css">
@@ -12,18 +13,18 @@
 
 <body>
     <nav> 
-        <div class="logo" ><span class="bx bx-star"></span></div>
+        <div class="logo"  data-aos="zoom-out-down" data-aos-delay="300" data-aos-duration="600"><span class="bx bx-star"></span></div>
         <ul id="menu">
-            <li> <a href="#">Home</a></li>
-            <li> <a href="#">Blogs</a></li>
-            <li><a href="#">About us</a></li>    
-            <li><a href="#">Support </a></li>
-           <li><a id="upload-btn">Upload</a></li> 
-            <li class="close-menu"><i class="bx bx-x" id = "close-menu"></i></li>
+            <li> <a href="#" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="200">Home</a></li>
+            <li> <a href="#"  data-aos="zoom-in" data-aos-delay="400" data-aos-duration="200">Blogs</a></li>
+            <li><a href="#"  data-aos="zoom-in" data-aos-delay="500" data-aos-duration="200">About us</a></li>    
+            <li><a href="#"  data-aos="zoom-in" data-aos-delay="600" data-aos-duration="200">Support </a></li>
+           <li><a id="upload-btn"  data-aos="zoom-in" data-aos-delay="600" data-aos-duration="200">Upload</a></li> 
+            <li class="close-menu"  data-aos="zoom-in" data-aos-delay="700" data-aos-duration="200"><i class="bx bx-x" id = "close-menu"></i></li>
     
         </ul> 
         <div class="icons">
-           <div class="switch-mode"><i class="bx bx-moon"></i></div>
+           <div class="switch-mode"  data-aos="fade-left" data-aos-delay="500" data-aos-duration="400"><i class="bx bx-moon"></i></div>
            <div class="open-menu"><i class="bx bx-menu"></i></div>
         </div>
         <button class="bx bx-chat"> </button>
@@ -31,11 +32,14 @@
 <div class="section">
     <div class="container">
         <div class="header">
-            <h1>Feaza Blog</h1>
-            <p>searching for inspiring photos?</p>
-            <button>Explore</button>
+            <h1 data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">Feaza Blog</h1>
+            <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000"> <span class="bx bxs-quote-left"></span> Share your passion for photography by uploading stunniing pictures and connecting with fellow photographers around the globe. Join us in celebrating the art of visual storytelling and showcasing the beauty of moments captured through lens. Let yout creativity shine on our platform! <span class="bx bxs-quote-right"></span> </p>
+            <button data-aos="zoom-in-up" data-aos-delay="200" data-aos-transition="500">Explore</button>
         </div>
-        <div class="sec-image"><img src="./assets/what.jpeg" alt=""></div>
+        <div class="sec-image" 
+        data-aos="fade-left"
+        data-aos-easing="linear"
+        data-aos-duration="900"><img src="./assets/what.jpeg" alt=""></div>
     </div>
 </div>
 <div id="blogs">
@@ -120,6 +124,10 @@
         </div>
         <div class="copy">Copyright&copy;AJDAVE 2024 </div>
 </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="./script/new.js"></script>
 <script src="./script/ai.js"></script>
 </body>
