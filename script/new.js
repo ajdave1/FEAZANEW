@@ -161,9 +161,9 @@ let index = 0
     Posts.pop(index)
     localStorage.setItem("savedposts",JSON.stringify(Posts));
     renderPosts();
-    setTimeout(()=>{
-          location.reload()
-    },10000)
+    // setTimeout(()=>{
+    //       location.reload()
+    // },15000)
   
 break
   }
@@ -188,10 +188,14 @@ break
    
    }
    function whatkey(key){
-    document.querySelector(".success-message").innerHTML="please provide a valid unique code";
+    
     document.querySelector(".success-message").style="display:block";
     if(key === "Enter"){    
-        deleteblog();}
+        document.querySelector(".success-message").innerHTML="Checking....."
+        setTimeout(()=>{
+       deleteblog();
+        }, 2000)}
+ 
         
     };
 
